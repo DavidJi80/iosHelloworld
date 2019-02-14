@@ -35,4 +35,7 @@
 }
 
 
+- (IBAction)setTitleLabel:(id)sender {
+    [myTitleLabel setText:@"Hello,I am David Ji."];
+}
 @end
