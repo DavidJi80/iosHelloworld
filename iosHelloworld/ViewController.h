@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SampleProtocol.h"
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController<SampleProtocolDelegate>{
     
     IBOutlet UILabel *myTitleLabel;
 }
