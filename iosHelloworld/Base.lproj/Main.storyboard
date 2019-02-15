@@ -33,6 +33,15 @@
                                     <action selector="setTitleLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WV5-Gd-0FS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oq4-LV-jZP">
+                                <rect key="frame" x="215" y="92" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Modal"/>
+                                <connections>
+                                    <action selector="goAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJ3-I1-gaW"/>
+                                    <segue destination="Cet-OD-ONL" kind="modal" identifier="EasyCode" id="nXg-fb-biv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +53,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="xzt-Af-Jvl">
+            <objects>
+                <viewController id="Cet-OD-ONL" customClass="CodeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pg7-sE-d75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T3Y-fc-fFP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6DT-W5-0QS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0v-Y7-nwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="22"/>
         </scene>
     </scenes>
 </document>

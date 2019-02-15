@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CodeViewController.h"
 
 @interface ViewController ()
 
@@ -43,4 +44,18 @@
 - (IBAction)setTitleLabel:(id)sender {
     [myTitleLabel setText:@"Hello,I am David Ji."];
 }
+
+- (IBAction)goAction:(id)sender {
+    [self performSegueWithIdentifier:@"EasyCode" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"EasyCode"]){
+        CodeViewController *receive=segue.destinationViewController;
+        receive.name=@"David Ji";
+        receive.age=18;
+    }
+}
+
+
 @end

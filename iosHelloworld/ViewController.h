@@ -16,5 +16,7 @@
 
 - (IBAction)setTitleLabel:(id)sender;
 
+- (IBAction)goAction:(id)sender;
+
 @end
 
