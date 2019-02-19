@@ -34,12 +34,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oq4-LV-jZP">
-                                <rect key="frame" x="215" y="92" width="84" height="30"/>
+                                <rect key="frame" x="25" y="102" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Modal"/>
+                                <state key="normal" title="Storyboard Modal"/>
                                 <connections>
                                     <action selector="goAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJ3-I1-gaW"/>
                                     <segue destination="Cet-OD-ONL" kind="modal" identifier="EasyCode" id="nXg-fb-biv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8Q-gR-YHN">
+                                <rect key="frame" x="185" y="102" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="tableView"/>
+                                <connections>
+                                    <segue destination="LGa-Sb-bDI" kind="modal" id="FfL-EC-vWa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,6 +61,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+        <!--Sample Table View Controller-->
+        <scene sceneID="Xe5-XL-Xxv">
+            <objects>
+                <viewController id="LGa-Sb-bDI" customClass="SampleTableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mj0-qf-7eh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pIu-I6-FZw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="nameID" id="CBz-uG-OrP">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CBz-uG-OrP" id="RhT-j6-zYv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="LGa-Sb-bDI" id="JFj-tH-vaQ"/>
+                                    <outlet property="delegate" destination="LGa-Sb-bDI" id="H0J-zV-0dP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UN0-vJ-cSq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ec6-GK-8Ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.60000000000002" y="720.08995502248877"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="xzt-Af-Jvl">
