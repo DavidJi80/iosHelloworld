@@ -15,6 +15,9 @@
 		27AB771D2213B20100A9690A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AB771C2213B20100A9690A /* Assets.xcassets */; };
 		27AB77202213B20100A9690A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AB771E2213B20100A9690A /* LaunchScreen.storyboard */; };
 		27AB77232213B20100A9690A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB77222213B20100A9690A /* main.m */; };
+		27DA9D3E221CF477006A02DD /* OnlyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DA9D3D221CF477006A02DD /* OnlyCodeViewController.m */; };
+		27DA9D42221CF6D0006A02DD /* XIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DA9D40221CF6D0006A02DD /* XIBViewController.m */; };
+		27DA9D43221CF6D0006A02DD /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DA9D41221CF6D0006A02DD /* XIBViewController.xib */; };
 		27EFD33D221AB8EE00D140AE /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EFD33C221AB8EE00D140AE /* SampleTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,11 @@
 		27AB771F2213B20100A9690A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27AB77212213B20100A9690A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27AB77222213B20100A9690A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27DA9D3C221CF477006A02DD /* OnlyCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyCodeViewController.h; sourceTree = "<group>"; };
+		27DA9D3D221CF477006A02DD /* OnlyCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyCodeViewController.m; sourceTree = "<group>"; };
+		27DA9D3F221CF6D0006A02DD /* XIBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XIBViewController.h; sourceTree = "<group>"; };
+		27DA9D40221CF6D0006A02DD /* XIBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBViewController.m; sourceTree = "<group>"; };
+		27DA9D41221CF6D0006A02DD /* XIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
 		27EFD33B221AB8EE00D140AE /* SampleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		27EFD33C221AB8EE00D140AE /* SampleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +75,7 @@
 		27AB77122213B1FF00A9690A /* iosHelloworld */ = {
 			isa = PBXGroup;
 			children = (
+				27DA9D3B221CF42D006A02DD /* controller */,
 				27AB77132213B1FF00A9690A /* AppDelegate.h */,
 				27AB77142213B1FF00A9690A /* AppDelegate.m */,
 				27AB77162213B1FF00A9690A /* ViewController.h */,
@@ -84,6 +93,18 @@
 				27EFD33C221AB8EE00D140AE /* SampleTableViewController.m */,
 			);
 			path = iosHelloworld;
+			sourceTree = "<group>";
+		};
+		27DA9D3B221CF42D006A02DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				27DA9D3C221CF477006A02DD /* OnlyCodeViewController.h */,
+				27DA9D3D221CF477006A02DD /* OnlyCodeViewController.m */,
+				27DA9D3F221CF6D0006A02DD /* XIBViewController.h */,
+				27DA9D40221CF6D0006A02DD /* XIBViewController.m */,
+				27DA9D41221CF6D0006A02DD /* XIBViewController.xib */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DA9D43221CF6D0006A02DD /* XIBViewController.xib in Resources */,
 				27AB77202213B20100A9690A /* LaunchScreen.storyboard in Resources */,
 				27AB771D2213B20100A9690A /* Assets.xcassets in Resources */,
 				27AB771B2213B1FF00A9690A /* Main.storyboard in Resources */,
@@ -156,9 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DA9D42221CF6D0006A02DD /* XIBViewController.m in Sources */,
 				276C488A22166193009181AA /* CodeViewController.m in Sources */,
 				27EFD33D221AB8EE00D140AE /* SampleTableViewController.m in Sources */,
 				27AB77182213B1FF00A9690A /* ViewController.m in Sources */,
+				27DA9D3E221CF477006A02DD /* OnlyCodeViewController.m in Sources */,
 				27AB77232213B20100A9690A /* main.m in Sources */,
 				27AB77152213B1FF00A9690A /* AppDelegate.m in Sources */,
 				276C488522155B6F009181AA /* SampleProtocol.m in Sources */,

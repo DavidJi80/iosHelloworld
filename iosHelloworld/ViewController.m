@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CodeViewController.h"
+#import "OnlyCodeViewController.h"
+#import "XIBViewController.h"
 
 @interface ViewController ()
 
@@ -55,6 +57,20 @@
         receive.name=@"David Ji";
         receive.age=18;
     }
+}
+
+- (IBAction)openOnlyCodeView:(id)sender {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        OnlyCodeViewController * vc=[[OnlyCodeViewController alloc]init];
+        [self presentViewController:vc animated:YES completion:nil];
+    });
+    
+    
+}
+
+- (IBAction)openXibView:(id)sender {
+    XIBViewController * vc=[[XIBViewController alloc]initWithNibName:@"XIBViewController" bundle:nil];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 

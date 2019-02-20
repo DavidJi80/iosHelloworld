@@ -18,15 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLa-XW-Auj">
-                                <rect key="frame" x="25" y="59" width="201" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-jG-KMl">
-                                <rect key="frame" x="234" y="54" width="46" height="30"/>
+                                <rect key="frame" x="185" y="59" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -50,6 +43,29 @@
                                     <segue destination="LGa-Sb-bDI" kind="modal" id="FfL-EC-vWa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtm-IR-5ky">
+                                <rect key="frame" x="25" y="148" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Only Code"/>
+                                <connections>
+                                    <action selector="openOnlyCodeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsx-fF-P7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVi-hn-X2Z">
+                                <rect key="frame" x="193" y="148" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="XIB"/>
+                                <connections>
+                                    <action selector="openXibView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtL-lb-dPp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLa-XW-Auj">
+                                <rect key="frame" x="25" y="64" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+            <point key="canvasLocation" x="-32.799999999999997" y="27.436281859070466"/>
         </scene>
         <!--Sample Table View Controller-->
         <scene sceneID="Xe5-XL-Xxv">
@@ -96,12 +112,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ec6-GK-8Ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365.60000000000002" y="720.08995502248877"/>
+            <point key="canvasLocation" x="-377" y="831"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="xzt-Af-Jvl">
             <objects>
-                <viewController id="Cet-OD-ONL" customClass="CodeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CodeViewController" id="Cet-OD-ONL" customClass="CodeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pg7-sE-d75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0v-Y7-nwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="22"/>
+            <point key="canvasLocation" x="366" y="831"/>
         </scene>
     </scenes>
 </document>
